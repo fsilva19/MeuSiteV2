@@ -1,0 +1,155 @@
+body,
+ul,
+li,
+p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Courier Prime', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 1170px;
+    margin-left: 97px;
+    margin-right: 97px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0075FF;
+    color: white;
+    height: 53px;
+    position: relative;
+}
+
+.header h1 {
+    float: left;
+    font-size: 29px;
+    color: black;
+    margin-top: 6px;
+    margin-left: 60px;
+    width: 30%;
+    font-family: 'Yesteryear', cursive;
+}
+
+.menu ul {
+    display: flex;
+    margin-right: 70px;
+    margin-bottom: 12px;
+}
+
+.menu li {
+    margin-left: 23px;
+    font-size: 18px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.menu ul li:hover {
+    border-bottom: 3px solid #000000;
+    color: black;
+}
+
+
+/*     ESTILZIAÇÃO PARA A PARTE INICIAL     */
+
+.titulo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1170px;
+    height: 470px;
+    margin-left: 98px;
+    margin-top: 15px;
+    background: linear-gradient(178.03deg, #0075FF 0.75%, #4271FF 16.86%, #0C1C59 75.79%);
+    border-radius: 3px;
+}
+
+.vindos {
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: Courier Prime;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 400px;
+    padding-top: 80px;
+}
+
+.felipe {
+    position: absolute;
+    width: 297px;
+    height: 444.77px;
+    float: right;
+    right: 255px;
+    top: 93px;
+    filter: drop-shadow(-6px 6px 20px rgba(0, 0, 0, 0.25));
+}
+
+
+/* vetores sem fundo */
+
+.vetor4 {
+    position: relative;
+    float: left;
+    transform: translateY(-420px);
+}
+
+.vetor3 {
+    position: relative;
+    float: right;
+    transform: translateY(-500px);
+}
+
+
+/*      PERGUNTAS      */
+
+.perguntas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 56px;
+    margin-left: 100px;
+}
+
+.perguntas ul {
+    display: flex;
+}
+
+.perguntas ul li {
+    position: relative;
+    background-color: #0C1C59;
+    box-shadow: -6px 6px 4px rgba(0, 0, 0, 0.33);
+    border-radius: 3px;
+    color: white;
+    font-size: 27px;
+    height: 90px;
+    width: 300px;
+    margin-right: 135px;
+    text-align: center;
+    align-items: center;
+}
+
+.perguntas ul li:nth-child(3) {
+    margin-right: 0px;
+}
