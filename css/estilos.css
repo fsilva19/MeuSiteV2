@@ -70,7 +70,7 @@ header {
 
 /*     ESTILZIAÇÃO PARA A PARTE INICIAL     */
 
-section.titulo {
+.titulo {
     display: flex;
     flex-wrap: wrap;
     width: 1170px;
@@ -82,18 +82,16 @@ section.titulo {
 }
 
 .vindos {
-    position: relative;
+    position: absolute;
     flex-wrap: wrap;
     justify-content: space-between;
     color: #ffffff;
-    font-family: Courier Prime;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 45px;
+    font-family: 'Courier Prime', monospace;
+    font-size: 43px;
     text-align: center;
     padding-left: 100px;
-    padding-right: 400px;
-    padding-top: 80px;
+    padding-right: 500px;
+    margin-top: 120px;
 }
 
 .felipe {
@@ -111,15 +109,16 @@ section.titulo {
 /* vetores sem fundo */
 
 .vetor4 {
-    position: relative;
+    position: absolute;
     float: left;
     transform: translateY(-420px);
 }
 
 .vetor3 {
-    position: relative;
-    float: right;
+    position: absolute;
+    width: 390px;
     transform: translateY(-500px);
+    margin-left: 956px;
 }
 
 
@@ -127,18 +126,15 @@ section.titulo {
 
 .vetor1 {
     width: 360px;
-    position: relative;
-    float: left;
+    position: absolute;
     z-index: -1;
-    transform: translate(-417px, -101px);
 }
 
 .vetor2 {
     width: 360px;
-    position: relative;
-    float: right;
+    position: absolute;
     z-index: -1;
-    transform: translateY(-400px);
+    transform: translateX(985px);
 }
 
 
@@ -290,9 +286,9 @@ section.titulo {
 .ufrn {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 800px;
+    margin-top: 1050px;
     margin-left: 465px;
-    position: relative;
+    position: absolute;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -307,11 +303,12 @@ section.titulo {
 
 .curso {
     display: grid;
+    position: absolute;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 0 auto;
     margin-left: 280px;
-    margin-top: 35px;
+    margin-top: 1200px;
     width: 770px;
     max-height: 520px;
     border-radius: 3px;
@@ -336,6 +333,22 @@ section.titulo {
     justify-content: center;
 }
 
+.mec {
+    border-top-left-radius: 5px;
+}
+
+.logomec {
+    border-top-right-radius: 5px;
+}
+
+.comp {
+    border-bottom-right-radius: 5px;
+}
+
+.logocomp {
+    border-bottom-left-radius: 5px;
+}
+
 .logomec,
 .logocomp {
     display: flex;
@@ -348,4 +361,97 @@ section.titulo {
 .logomec img,
 .logocomp img {
     height: 174px;
+}
+
+
+/*   rodape + barra de redes sociais   */
+
+
+/*    BARRA COM AS REDES SOCIAIS  */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2000px;
+    margin-left: 98px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    background-color: #BDBDBD;
+    width: 1170px;
+    height: 260px;
+}
+
+.redes p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 100px;
+    margin-right: 400px;
+    font-size: 35px;
+    color: #0C1C59;
+}
+
+.fotof {
+    height: 245px;
+    margin-left: 230px;
+    margin-top: 15px;
+    filter: drop-shadow(-6px 6px 20px rgba(0, 0, 0, 0.25));
+}
+
+.redes ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.redes ul li {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 700px;
+    margin-top: 17px;
+    text-align: center;
+    align-items: center;
+}
+
+.redes ul li a {
+    color: black;
+}
+
+.redes ul li a:hover {
+    color: #0C1C59;
+    border-bottom: 3px solid;
+    border-bottom-color: #0C1C59;
+}
+
+.redes ul li img {
+    display: flex;
+    height: 35px;
+    padding-right: 20px;
+}
+
+.rodape {
+    display: flex;
+    position: absolute;
+    width: 1170px;
+    height: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    background-color: #0C1C59;
+    margin-top: 290px;
 }
