@@ -36,16 +36,18 @@ header {
 
 .header h1 {
     float: left;
-    font-size: 29px;
+    font-size: 32px;
     color: black;
-    margin-top: 6px;
+    margin-top: 7px;
     margin-left: 60px;
-    font-family: 'Yesteryear', cursive;
+    padding-top: -3px;
+    font-family: 'Arima Madurai', cursive;
 }
 
 .menu ul {
     display: flex;
-    margin-right: 70px;
+    margin-right: 95px;
+    margin-top: -14px;
 }
 
 .menu ul li {
@@ -58,7 +60,7 @@ header {
 .menu ul li a {
     align-items: center;
     display: flex;
-    padding: 10px;
+    padding: 8px;
 }
 
 .menu ul li:hover {
@@ -89,9 +91,10 @@ header {
     font-family: 'Courier Prime', monospace;
     font-size: 43px;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 500px;
+    padding-left: 120px;
+    padding-right: 550px;
     margin-top: 120px;
+    margin-left: 70px;
 }
 
 .felipe {
@@ -454,4 +457,38 @@ footer {
     color: white;
     background-color: #0C1C59;
     margin-top: 290px;
+}
+
+
+/* ANIMAÇÕES */
+
+[data-anime] {
+    opacity: 0;
+    transition: .6s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0px, 0px);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0px, 0px);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0px, 50px, 0px);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #D68910 90%);
+    border-radius: 3px;
 }
