@@ -44,29 +44,58 @@ header {
     font-family: 'Arima Madurai', cursive;
 }
 
+.menu {
+    width: 70%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-left: 90px;
+}
+
+.menu .menu-lista {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.menu .menu-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 7px 10px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.menu .menu-link:hover {
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+
+.menu .menu-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background: black;
+    transition: 0.3s ease-out;
+}
+
+.menu .menu-link:hover::after {
+    left: 0px;
+    width: 100%;
+}
+
 .menu ul {
     display: flex;
-    margin-right: 95px;
-    margin-top: -14px;
-}
-
-.menu ul li {
-    margin-left: 23px;
-    font-size: 18px;
-    text-align: center;
-    align-items: center;
-}
-
-.menu ul li a {
-    align-items: center;
-    display: flex;
-    padding: 8px;
-}
-
-.menu ul li:hover {
-    border-bottom: 3px solid #000000;
-    border-radius: 3px;
-    color: black;
+    margin-right: 70px;
+    margin-top: -20px;
+    height: 10px;
 }
 
 
@@ -462,6 +491,9 @@ footer {
 
 /* ANIMAÇÕES */
 
+
+/*   EFEITOS DO CLIQUE COM SCROLL COM JS*/
+
 [data-anime] {
     opacity: 0;
     transition: .6s;
@@ -483,6 +515,9 @@ footer {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
+
+
+/*   EFEITOS DA BARRA DE ROLAGEM   */
 
 ::-webkit-scrollbar {
     width: 8px;

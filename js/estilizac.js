@@ -1,3 +1,4 @@
+//          animação de transparência      //
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 const animationClass1 = 'animate1';
@@ -29,7 +30,7 @@ window.addEventListener('scroll', function() {
     animescr();
 });
 
-// animação dos botoes internos
+//          animação dos botoes internos        // 
 const menuItens = document.querySelectorAll('.menu a');
 
 menuItens.forEach(item => {
